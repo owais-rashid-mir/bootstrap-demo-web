@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- You should include this Bootstrap universal language attribute(Optional). -->
+	<meta charset="utf-8">
+	
+	<!-- Below Bootstrap line enables the page to automatically adapt to different device sizes -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- From font.google.com  -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	
+	<!-- Including Bootstrap 4 code. Rest of the 3 lines have been written in <body> at the end so they don't load before the page. -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+	
+	<style>
+	
+		*{
+			margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;
+		}
+		
+		/* Make the image fully responsive */
+		.carousel-inner img {
+		width: 100%;
+		height: 100%;
+	  }
+  </style>
+
+    
+</head>
+
+<body>
+	<header> 
+	
+		<!-- Making a Navbar in Bootstrap. Just copy the Navbar code from Bootstrap site and paste it here. -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Owais Rashid Mir's site</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">About Us</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Dropdown
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		  </li>
+		</ul>
+		
+		<form class="form-inline my-2 my-lg-0">
+		  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		
+	  </div>
+	</nav>  <!-- End of Navbar -->
+	
+	
+	<!-- Making a Carousel(Sliding pics) in Bootstrap. Just copy the Carousel code from w3schools.com(or BS) site and paste it here. -->
+	<!-- Put the pics with similar dimensions. -->
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+		</ul>
+	  
+		<!-- The slideshow -->
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="images/la.jpg" alt="Los Angeles" width="1100" height="500">
+			</div>
+			<div class="carousel-item">
+			  <img src="images/chicago.jpg" alt="Chicago" width="1100" height="500">
+			</div>
+			<div class="carousel-item">
+			  <img src="images/ny.jpg" alt="New York" width="1100" height="500">
+			</div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>  <!-- End of Carousel -->
+		
+		
+	</header> <!-- End of header -->
+	
+	<!-- ABOUT US section-->
+	<section>
+		<div class="container-fluid">
+			<h1 class="text-center text-capitalize pt-5 ">About Us</h1>
+			<hr class="w-25 mx-auto pb-5">
+			
+			<div class="row mb-5">
+				<div class="col-lg-6 col-md-6 col-12">
+					<img src="images/ny.jpg" class="img-fluid">
+				</div>
+				
+				<div class="col-lg-6 col-md-6 col-12">
+					<h1> Who am I? </h1>
+					<hr>
+					<p> Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir
+						Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir
+						Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir
+						Owais Rashid Mir
+						Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir
+						Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir
+						Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir Owais Rashid Mir
+						Owais Rashid Mir.
+					</p>
+					
+					<button class="btn bg-primary text-white">Wanna know me> </button>
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</section>   <!-- ABOUT US section end-->
+	
+	
+	
+	<!-- 'Services' section. 'services' is just text here -->
+	<section>
+		<div class="container">
+			<h1 class="text-center text-capitalize pt-5 ">Services</h1>
+			<hr class="w-25 mx-auto pt-5">
+		
+		
+		
+		<!-- Using 'Cards'. code copied from w3schools.com -->
+			<div class="row text-center mb-5">
+			
+				<div class="col-lg-4 col-md-4 col-12">
+					
+					<div class="card" style="width:400px">
+					  <img class="card-img-top" src="images/owais.jpg" alt="Card image">
+					  
+					  <div class="card-body">
+						<h4 class="card-title">Owais R Mir</h4>
+						<p class="card-text">Some example text.</p>
+						<a href="#" class="btn btn-primary">See Profile</a>
+					  </div>
+					</div>	
+					
+				</div>
+				
+				
+				<div class="col-lg-4 col-md-4 col-12">
+					
+					<div class="card" style="width:400px">
+					  <img class="card-img-top" src="images/owais.jpg" alt="Card image">
+					  
+					  <div class="card-body">
+						<h4 class="card-title">Owais R Mir</h4>
+						<p class="card-text">Some example text.</p>
+						<a href="#" class="btn btn-primary">See Profile</a>
+					  </div>
+					</div>	
+					
+				</div>
+				
+				
+				
+				<div class="col-lg-4 col-md-4 col-12">
+					
+					<div class="card" style="width:400px">
+					  <img class="card-img-top" src="images/owais.jpg" alt="Card image">
+					  
+					  <div class="card-body">
+						<h4 class="card-title">Owais R Mir</h4>
+						<p class="card-text">Some example text.</p>
+						<a href="#" class="btn btn-primary">See Profile</a>
+					  </div>
+					</div>	
+					
+				</div>
+				
+				
+				
+			</div>
+		
+	</section>  <!-- End of "Services" section-->
+	
+	
+	
+	<!-- contact demo -->
+	<section class="bg-primary">
+	
+		<article class="py-5 text-center text-white">
+		
+			<div>
+				<h3 class="display-4">+91 9149912066</h3>
+				<p>If you want best service, call us now. </p>
+				<button class="btn btn-warning">Contact Now</button>
+			</div>
+			
+		</article>
+	
+	</section>
+	<!-- contact demo end -->
+	
+	
+	
+	<!-- Gallery start -->
+	<section>
+	
+		<div class="container">
+			<h1 class="text-center text-capitalize pt-5 ">Gallery</h1>
+			<hr class="w-25 mx-auto pt-5">
+		
+		
+		<div class="row">
+			
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="images/ny.jpg" class="img-fluid">
+			</div>
+			
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="images/ny.jpg" class="img-fluid">
+			</div>
+			
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="images/ny.jpg" class="img-fluid">
+			</div>
+			
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="images/ny.jpg" class="img-fluid">
+			</div>
+			
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="images/ny.jpg" class="img-fluid">
+			</div>
+			
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="images/ny.jpg" class="img-fluid">
+			</div>
+			
+			
+			
+			
+			
+		</div>
+			
+			
+	</section> <!-- Gallery end -->
+	
+	
+	
+	<!-- login form in popup menu start -->
+	<section class="bg-primary">
+	
+		<article class="py-5">
+		
+			<div class="text-center text-white">
+				<h3 class="display-4">Want to join?</h3>
+				<p>Be a part of our family. </p>
+				<button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Join Now.</button>	<!-- When clicking on this JOIN NOW button, login popup should open -->
+			</div>
+			
+			
+			<!-- Writing BS4 Modal(login popup menu) -->
+			
+			<!-- The Modal starts-->
+			  <div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-dialog-centered">
+				  <div class="modal-content">
+				  
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <h4 class="modal-title">LOGIN</h4>
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+					
+						<!-- Using Bootstrap 4 Form('Stacked Form') inside a BS4 Modal -->
+						<form action="/action_page.php">
+							  <div class="form-group">
+								<label for="email">Email address:</label>
+								<input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+							  </div>
+							  <div class="form-group">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control" placeholder="Enter password" id="pwd">
+							  </div>
+							  <div class="form-group form-check">
+								<label class="form-check-label">
+								  <input class="form-check-input" type="checkbox"> Remember me
+								</label>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+			  <!-- The Modal ends-->
+			
+			
+			
+		</article>
+	
+	</section>
+	<!-- login form in popup menu end -->
+	
+	
+	
+	
+	<!-- 'contact us' form starts -->
+	<section>
+	
+		<div class="container mb-5">
+			<h1 class="text-center text-capitalize pt-5 ">Contact Us</h1>
+			<hr class="w-25 mx-auto pt-5">
+		
+		
+		
+		<div class="w-50 mx-auto">
+		
+			<!-- Using Bootstrap 4 Form('Stacked Form') -->
+			<form action="/action_page.php">
+				  <div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" placeholder="Enter name" id="name">
+				  </div>
+				  
+				  <div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" placeholder="Enter email" id="email">
+				  </div>
+				  
+				  <div class="form-group">
+					<label for="phone">Phone:</label>
+					<input type="number" class="form-control" placeholder="Enter phone no" id="phone">
+				  </div>
+				  
+				  <div class="form-group">
+					<label> Textarea </label>
+					<textarea class="form-control"> </textarea>
+					
+				  </div>
+				  
+				  <div class="form-group form-check">
+					<label class="form-check-label">
+					  <input class="form-check-input" type="checkbox"> Remember me
+					</label>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		
+		
+		</div>
+	</div>
+		
+			
+		
+	</section>	
+	<!-- 'contact us' form ends -->
+	
+	
+	
+	<!-- Footer starts -->
+	<footer>
+		
+		<p class="text-center bg-dark text-white"> @Copyright Owais R Mir 2020 </p>
+	
+	
+	</footer>
+	<!-- Footer ends -->
+	
+	
+	
+	
+	
+	
+	
+	<!-- Including Bootstrap 4 code (Continued)-->
+	<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+ 
+</html>
